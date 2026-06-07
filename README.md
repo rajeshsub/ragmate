@@ -2,7 +2,7 @@
 
 **A Retrieval-Augmented Generation (RAG) system for chatting with your documents.**
 
-Upload PDFs, Word docs, Markdown, or plain text and ask questions in natural language. ragmate embeds your documents into a vector store, retrieves the most semantically relevant passages at query time, and passes them as context to Gemini to generate grounded answers with source citations.
+Upload PDFs, Word docs, Markdown, or plain text and ask questions in natural language. ragmate embeds your documents into a vector store, retrieves the most semantically relevant passages at query time, and passes them as context to Gemini to generate grounded answers with source citations. It grounds the answers it generates on the documents you provide instead of relying on prior training data.
 
 [![CI](https://github.com/rajeshsub/ragmate/actions/workflows/ci.yml/badge.svg)](https://github.com/rajeshsub/ragmate/actions/workflows/ci.yml)
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
