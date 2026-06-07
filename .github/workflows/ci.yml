@@ -40,8 +40,8 @@ jobs:
 
       - name: Tests + coverage
         env:
-          GEMINI_API_KEY: test-key
-          API_KEY: test-key
+          GEMINI_API_KEY: test-gemini-key
+          API_KEY: test-api-key
         run: pytest --cov=ragmate --cov-report=xml --cov-fail-under=80
 
       - name: Upload coverage
