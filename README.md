@@ -28,7 +28,7 @@ Upload PDFs, Word docs, Markdown, or plain text and ask questions in natural lan
 
 A built-in web interface is served at `http://localhost:8000`:
 
-- Drag-and-drop or click to upload documents (up to 2 at a time)
+- Drag-and-drop or click to upload documents (up to 2 at a time, 20 MB each max)
 - Real-time upload progress with percentage via Server-Sent Events
 - Document list with upload timestamps and delete support
 - Chat interface with expandable source citations
