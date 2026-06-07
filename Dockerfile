@@ -6,10 +6,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pyproject.toml LICENSE ./
-RUN pip install --no-cache-dir -e .
-
+COPY pyproject.toml LICENSE README.md ./
 COPY ragmate/ ragmate/
+RUN pip install --no-cache-dir .
 
 RUN mkdir -p /app/chroma_data /app/uploads
 
