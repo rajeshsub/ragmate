@@ -1,6 +1,6 @@
 # ragmate
 
-**A Retrieval-Augmented Generation (RAG) system for chatting with your documents.**
+**AI powered Retrieval-Augmented Generation (RAG) system for chatting with your documents.**
 
 Upload PDFs, Word docs, Markdown, or plain text and ask questions in natural language. ragmate embeds your documents into a vector store, retrieves the most semantically relevant passages at query time, and passes them as context to Gemini to generate grounded answers with source citations. It grounds the answers it generates on the documents you provide instead of relying on prior training data.
 
