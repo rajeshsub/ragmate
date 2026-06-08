@@ -139,7 +139,7 @@ Open `http://localhost:8000` for the web UI, or `http://localhost:8000/docs` for
 
 ```bash
 docker build -t ragmate .
-docker run -p 8000:8000 \
+docker run -p 7860:7860 \
   -e GEMINI_API_KEY=your-key \
   -e API_KEY=your-secret \
   -v $(pwd)/chroma_data:/app/chroma_data \
