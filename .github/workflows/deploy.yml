@@ -30,5 +30,14 @@ jobs:
 
           cd hf-space
           git add .
-          git diff --staged --quiet || git commit -m "Deploy ${{ github.sha }}"
-          git push
+          echo "=== staged diff ==="
+          git diff --staged --stat
+          echo "=== status ==="
+          git status --short
+          if git diff --staged --quiet; then
+            echo "No changes to deploy - Space is already up to date"
+          else
+            git commit -m "Deploy ${{ github.sha }}"
+            git push
+            echo "Deployed successfully"
+          fi
