@@ -5,6 +5,8 @@
 Upload PDFs, Word docs, Markdown, or plain text and ask questions in natural language. ragmate embeds your documents into a vector store, retrieves the most semantically relevant passages at query time, and passes them as context to Gemini to generate grounded answers with source citations. It grounds the answers it generates on the documents you provide instead of relying on prior training data.
 
 [![CI](https://github.com/rajeshsub/ragmate/actions/workflows/ci.yml/badge.svg)](https://github.com/rajeshsub/ragmate/actions/workflows/ci.yml)
+[![Deploy](https://github.com/rajeshsub/ragmate/actions/workflows/deploy.yml/badge.svg)](https://github.com/rajeshsub/ragmate/actions/workflows/deploy.yml)
+[![HF Space](https://img.shields.io/badge/HuggingFace-Space-yellow)](https://huggingface.co/spaces/rajeshsub/ragmate)
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -228,6 +230,14 @@ make docs        # export openapi.json
 | Plain text | `.txt` | plain text |
 
 > Scanned / image-based PDFs are not supported (no OCR). Text must be selectable in the PDF.
+
+---
+
+## Live Demo
+
+Hosted on Hugging Face Spaces: **https://huggingface.co/spaces/rajeshsub/ragmate**
+
+Every push to `main` that passes CI is automatically deployed there. Contact the repo owner for the access key.
 
 ---
 
