@@ -23,3 +23,9 @@ assets/
 .DS_Store
 Thumbs.db
 ignore.txt
+ui_previews/
+.git*
+*.md
+!README.md
+.pre-commit-config.yaml
+.editorconfig
