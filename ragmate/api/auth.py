@@ -13,7 +13,14 @@ def require_api_key(
     api_key: str | None = Security(_api_key_header),
     settings: Settings = Depends(get_settings),
 ) -> str:
-    if not api_key or api_key != settings.api_key:
+    if not api_key:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or missing API key. Provide X-API-Key header.",
+        )
+
+    valid_keys = [key.strip() for key in settings.api_key.split(",") if key.strip()]
+    if api_key not in valid_keys:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or missing API key. Provide X-API-Key header.",
