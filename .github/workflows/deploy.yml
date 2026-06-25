@@ -25,7 +25,7 @@ jobs:
           git clone https://rajeshsub:$HF_TOKEN@huggingface.co/spaces/rajeshsub/ragmate hf-space
 
           cp -r ragmate hf-space/
-          cp Dockerfile pyproject.toml LICENSE hf-space/
+          cp Dockerfile pyproject.toml LICENSE requirements-lock.txt hf-space/
           cp hf_README.md hf-space/README.md
 
           cd hf-space
